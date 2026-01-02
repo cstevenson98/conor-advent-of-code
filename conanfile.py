@@ -10,9 +10,7 @@ class AdventOfCodeConan(ConanFile):
 
     def requirements(self):
         self.requires("gtest/1.15.0")
-        # Import the cpp-cli library from local path
-        # This will be used once cpp-cli is installed to conan cache
-        # For now, we'll use it as a CMake dependency
+        self.requires("cpp-cli/1.0.0")
 
     def layout(self):
         build_type = str(self.settings.build_type)
@@ -24,8 +22,6 @@ class AdventOfCodeConan(ConanFile):
         deps.generate()
         tc = CMakeToolchain(self)
         tc.variables["CMAKE_EXPORT_COMPILE_COMMANDS"] = "ON"
-        # Add path to cpp-cli for find_package
-        tc.variables["cpp-cli_DIR"] = "/home/conor/dev/cpp-cli/build/Debug"
         tc.generate()
 
     def build(self):

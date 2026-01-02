@@ -8,7 +8,7 @@ target_include_directories(test_day-1 PRIVATE
 )
 
 target_link_libraries(test_day-1 PRIVATE
-    core_cli
+    cpp-cli::core_cli
     GTest::gtest
     GTest::gtest_main
 )

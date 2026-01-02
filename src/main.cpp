@@ -4,6 +4,7 @@
 
 // Include all day registration headers
 #include "year-2025/day-1.hpp"
+#include "year-2025/day-2.hpp"
 #include "year-2025/day-3.hpp"
 #include "year-2025/day-4.hpp"
 #include "year-2025/day-6.hpp"
@@ -15,6 +16,7 @@ int main(int argc, char *argv[]) {
 
   // Register all year 2025 day commands
   aoc::year_2025::day_1::register_commands(executor);
+  aoc::year_2025::day_2::register_commands(executor);
   aoc::year_2025::day_3::register_commands(executor);
   aoc::year_2025::day_4::register_commands(executor);
   aoc::year_2025::day_6::register_commands(executor);

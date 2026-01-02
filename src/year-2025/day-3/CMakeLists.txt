@@ -9,7 +9,7 @@ target_include_directories(day-3-lib PUBLIC
 )
 
 target_link_libraries(day-3-lib PUBLIC
-    core_cli
+    cpp-cli::core_cli
 )
 
 # Unit tests
