@@ -1,0 +1,13 @@
+#pragma once
+
+namespace cli {
+class CliExecutor;
+}
+
+namespace aoc::year_2025::day_6 {
+
+/// Register day-6 commands with the CLI executor
+void register_commands(cli::CliExecutor &executor);
+
+} // namespace aoc::year_2025::day_6
+
