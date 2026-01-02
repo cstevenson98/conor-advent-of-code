@@ -3,16 +3,15 @@
 #include "cli.hpp"
 
 // Include all day registration headers
-#include "day-1.hpp"
-#include "day-3.hpp"
-#include "day-4.hpp"
-#include "day-6.hpp"
-#include "day-7.hpp"
-#include "day-9.hpp"
+#include "year-2025/day-1.hpp"
+#include "year-2025/day-3.hpp"
+#include "year-2025/day-4.hpp"
+#include "year-2025/day-6.hpp"
+#include "year-2025/day-7.hpp"
+#include "year-2025/day-9.hpp"
 
 int main(int argc, char *argv[]) {
-  cli::CliExecutor executor("advent-of-code", 
-                            "Advent of Code Solutions");
+  cli::CliExecutor executor("advent-of-code", "Advent of Code Solutions");
 
   // Register all year 2025 day commands
   aoc::year_2025::day_1::register_commands(executor);
@@ -27,4 +26,3 @@ int main(int argc, char *argv[]) {
 
   return executor.run(argc, argv);
 }
-

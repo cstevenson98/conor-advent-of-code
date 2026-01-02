@@ -5,6 +5,7 @@ add_library(day-4-lib STATIC
 
 target_include_directories(day-4-lib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/src/include
 )
 
 target_link_libraries(day-4-lib PUBLIC

@@ -47,6 +47,10 @@ add_executable(advent-of-code
     src/main.cpp
 )
 
+target_include_directories(advent-of-code PRIVATE
+    ${CMAKE_SOURCE_DIR}/src/include
+)
+
 target_link_libraries(advent-of-code PRIVATE
     core_cli
     day-1-lib
